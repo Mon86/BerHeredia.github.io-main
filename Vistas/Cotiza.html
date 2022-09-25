@@ -5,27 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cotiza</title>
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../Estilos.css">
 </head>
 <body class="body">
     <header>
-        <nav>
-            <div >
-                <ul class="nav_header">
-                    <li><a href="../Index.html">GRAPHOS</a> </li>
-                    <li><a href="../Index.html">Inicio</a> </li>
-                    <li><a href="./QuienesSomos.html">Quiénes somos</a> </li>
-                    <li><a href="./Servicios.html">Servicios</a>
-                        <ul>
-                            <li><a href="./Servicios.html#diplomatico">Dictamen Diplomático</a></li>
-                            <li><a href="./Servicios.html#grafoscopico">Dictamen Grafoscópico</a></li>
-                            <li><a href="./Servicios.html#paleografico">Transcripción Paleográfica</a></li>
-                        </ul></li>
-                    <li><a href="">Cotiza</a> </li>
-                    <li><a href="./Contacto.html">Contacto</a></li>
-                </ul>
+        <nav class="navbar navbar-dark bg-dark ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">GRAPHOS</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./Vistas/Contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./Vistas/Cotiza.html">COTIZA</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        SERVICIOS
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="./Vistas/Servicios.html#diplomatico">DICTAMEN DIPLOMATICO</a></li>
+                        <li><a class="dropdown-item" href="./Vistas/Servicios.html#grafoscopico">Dictamen Grafoscópico</a></li>
+                        
+                        <li><a class="dropdown-item" href="./Vistas/Servicios.html#paleografico">Transcripción Paleográfica</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Vistas/QuienesSomos.html">QUIENES SOMOS</a>
+                      </li>
+                    </ul>
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
             </div>
-        </nav>
+          </nav>
     </header>
         <section>
             <h1 class="titulo">Cotiza</h1>
@@ -79,7 +108,7 @@
         <section>
             <ul>
                 <li>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.446016617972!2d-99.11543618511693!3d19.436327745597968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f94d3beca4ef%3A0x55fad60c5a494fef!2sArchivo%20General%20de%20la%20Naci%C3%B3n!5e0!3m2!1ses!2smx!4v1643517388887!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.446016617972!2d-99.11543618511693!3d19.436327745597968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f94d3beca4ef%3A0x55fad60c5a494fef!2sArchivo%20General%20de%20la%20Naci%C3%B3n!5e0!3m2!1ses!2smx!4v1643517388887!5m2!1ses!2smx" width="80%" height="80%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </li>
             </ul>
         </section>
@@ -95,5 +124,7 @@
                 </div>
             </nav>
         </footer>
+        <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
